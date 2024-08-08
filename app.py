@@ -4,6 +4,9 @@ def validar_cpf(inputCpf):
     cpf_pontuado = inputCpf
     cpf = ''
 
+    if inputCpf[0] == inputCpf[0] * len(inputCpf[0]):
+        return False
+
     def verificar_numero(numero:str):
         if numero.isnumeric():
             return True
