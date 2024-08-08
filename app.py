@@ -25,7 +25,7 @@ def validar_cpf(inputCpf):
     primeiro_digito = 0
     segundo_digito = 0
 
-    for numero in range(0, len(cpf) - 3):
+    for numero in range(0, len(cpf) - 2):
         primeiro_digito += cpf_separado[numero] * (10 - numero)
         
     for numero in range(0, len(cpf) - 1):
